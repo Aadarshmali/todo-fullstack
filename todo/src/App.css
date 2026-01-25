@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container for the todo app */
+.todo-container {
+  background: #ffffff;
+  max-width: 450px;
+  width: 90%;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* App title */
+.todo-container h2 {
+  color: #4a90e2;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* Input box and Add button container */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* Input field */
+.input-container input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #1a1919;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Add button */
+.input-container button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #357ab8;
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Todo item */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9d4d4;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Delete button */
+li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #ff5c5c;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+li button:hover {
+  transform: scale(1.2);
+}
